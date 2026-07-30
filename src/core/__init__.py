@@ -1,3 +1,3 @@
-from .shared_state import GameEngine, Team, Edge
+from .shared_state import GameEngine, Team
 
-__all__ = ["GameEngine", "Team", "Edge"]
+__all__ = ["GameEngine", "Team"]
