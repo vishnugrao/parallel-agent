@@ -1,0 +1,4 @@
+# unpinned deps
+pytest
+requests
+numpy

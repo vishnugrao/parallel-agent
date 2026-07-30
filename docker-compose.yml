@@ -1,0 +1,16 @@
+services:
+  test:
+    build: .
+    volumes:
+      - ./src:/app/src
+      - ./tests:/app/tests
+    command: pytest tests/ -v --tb=short
+
+  dev:
+    build: .
+    volumes:
+      - ./src:/app/src
+      - ./tests/app/tests
+    command: bash
+    stdin_open: true
+    tty: true
